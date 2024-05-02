@@ -1,3 +1,9 @@
+.header img {
+  width: 30px;
+  height: 30px;
+  /* Ctrl + Shift + L để chọn nhanh các phần tử giống nhau bôi đen */
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,4 +13,74 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header .bodyheader {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.header .nav ul {
+  display: flex;
+}
+
+.header .nav {
+  margin-left: auto;
+}
+
+.maincontent {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: calc(100% - 50px);
+}
+
+.header .nav a {
+  font-size: 1.6rem;
+  /* background-color: blue;
+  color: black; */
+  padding: 8px 21px;
+}
+
+.header .nav a:hover {
+  color: black;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.btn {
+  display: inline-block;
+  /* Vì thẻ inline không padding-top, padding-bottom, margin-top, margin-bottom, width, height, min-width, 
+  min-height do nó không được phá vỡ cấu trúc dòng, vì vậy muốn được thì phải chuyển nó thành block hoặc inline-block */
+  color: blue;
+  background-color: aqua;
+  border-radius: 35px;
+  padding: 0px 16px;
+  min-width: 110px;
+  text-align: center;
+  line-height: 40px;
+  /* Vì thẻ inline không padding-top, padding-bottom, margin-top, margin-bottom, width, height, min-width, 
+  min-height do nó không được phá vỡ cấu trúc dòng, vì vậy muốn được thì phải chuyển nó thành block hoặc inline-block */
+}
+
+.header .bodyheader .btn-sign-up {
+  min-width: 140px;
+}
+
+.header .action {
+  margin-left: 30px;
+}
+
+.header {
+  background-color: rgba(171, 154, 157, 0.359);
+}
+.header.fixed {
+  position: sticky;
+  top: -10px;
 }
